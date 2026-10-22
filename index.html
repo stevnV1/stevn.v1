@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#14283F">
+    <meta name="description" content="Portfolio de Steven Vitvitchi, en recherche d'un stage de 3 mois minimum en développement web, webdesign ou IA.">
+    <title>Steven Vitvitchi — Webdesign, code et IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu" data-i18n="skip">Aller au contenu</a>
+
+    <div class="reading-progress" aria-hidden="true">
+      <span id="progression"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#accueil" aria-label="Steven Vitvitchi, accueil" data-i18n-aria="homeLink">SV<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Navigation principale" data-i18n-aria="mainNavigation">
+        <a href="#profil" data-i18n="navProfile">Profil</a>
+        <a href="#competences" data-i18n="navSkills">Compétences</a>
+        <a href="#parcours" data-i18n="navExperience">Parcours</a>
+        <a href="#formation" data-i18n="navEducation">Formation</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch the site to English" data-i18n-aria="languageButtonLabel">
+          <span id="language-label">EN</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu" data-i18n-aria="openMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile" data-i18n-aria="mobileNavigation" hidden>
+        <a href="#profil" data-i18n="navProfile">Profil</a>
+        <a href="#competences" data-i18n="navSkills">Compétences</a>
+        <a href="#parcours" data-i18n="navExperience">Parcours</a>
+        <a href="#formation" data-i18n="navEducation">Formation</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="accueil" aria-labelledby="nom">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-topline reveal">
+            <span class="eyebrow" data-i18n="home">Accueil</span>
+            <span class="availability"><span class="availability-dot"></span> <span data-i18n="availability">Recherche de stage · 3 mois minimum</span></span>
+          </div>
+          <p class="personal-message" id="personal-message" hidden></p>
+          <div class="hero-title-wrap reveal">
+            <p class="hero-kicker"><span data-i18n="tagline">Webdesign, code et IA</span> <span>· Nice.</span></p>
+            <h1 id="nom">Steven<br><span>Vitvitchi</span></h1>
+          </div>
+          <div class="hero-bottom reveal">
+            <a class="scroll-cue" href="#profil" aria-label="Défiler vers le profil" data-i18n-aria="scrollToProfile">
+              <span data-i18n="scroll">Défiler pour découvrir</span><span class="scroll-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-wrap" id="profil" aria-labelledby="profil-titre">
+        <div class="section-marker reveal"><span>01</span><span data-i18n="profile">Profil</span></div>
+        <div class="intro-content reveal">
+          <h2 class="section-heading" id="profil-titre"><span data-i18n="profile">Profil</span></h2>
+          <div class="intro-copy">
+            <p data-i18n="introduction">J'ai commencé par intégrer des sites WordPress en agence, puis j'ai creusé ce qu'il y a derrière : HTML, CSS, JavaScript et maintenant C++. Au moment de ce stage, ma dernière année à l'ISEG sera derrière moi, et mes projets auront avancé aussi. Je cherche 3 mois minimum, en France ou au Japon, pour construire des sites et des outils clairs, rapides et utiles.</p>
+            <div class="intro-actions">
+              <a class="button button-primary" href="#contact"><span data-i18n="contactMe">Me contacter</span> <span aria-hidden="true">↗</span></a>
+              <a class="button button-text" href="cv-steven.pdf" download><span data-i18n="downloadCv">Télécharger mon CV</span> <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section-wrap" id="competences" aria-labelledby="competences-titre">
+        <div class="section-marker reveal"><span>02</span><span data-i18n="skills">Compétences</span></div>
+        <div class="section-main">
+          <div class="section-heading-row reveal">
+            <h2 class="section-heading" id="competences-titre"><span data-i18n="skills">Compétences</span></h2>
+          </div>
+          <div class="skill-list">
+            <article class="skill-row reveal">
+              <h3 data-i18n="web">Web</h3>
+              <p data-i18n="webSkills">HTML, CSS, JavaScript. PHP et SQL (Code Camp Epitech). C++ en cours d'apprentissage.</p>
+              <span class="skill-mark" aria-hidden="true">01</span>
+            </article>
+            <article class="skill-row reveal">
+              <h3 data-i18n="cmsMarketing">CMS et marketing</h3>
+              <p data-i18n="cmsSkills">WordPress, WPML, Rank Math SEO, emailing Brevo.</p>
+              <span class="skill-mark" aria-hidden="true">02</span>
+            </article>
+            <article class="skill-row reveal">
+              <h3 data-i18n="design">Design</h3>
+              <p data-i18n="designSkills">Figma, suite Adobe, UX.</p>
+              <span class="skill-mark" aria-hidden="true">03</span>
+            </article>
+            <article class="skill-row reveal">
+              <h3 data-i18n="languages">Langues</h3>
+              <p data-i18n="spokenLanguages">Anglais (C1), russe (B1), français et moldave (langues maternelles).</p>
+              <span class="skill-mark" aria-hidden="true">04</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-wrap" id="parcours" aria-labelledby="experiences-titre">
+        <div class="section-marker reveal"><span>03</span><span data-i18n="experience">Expériences</span></div>
+        <div class="section-main">
+          <div class="section-heading-row reveal">
+            <h2 class="section-heading" id="experiences-titre"><span data-i18n="experience">Expériences</span></h2>
+          </div>
+          <div class="experience-list">
+            <details class="experience-item reveal" open>
+              <summary>
+                <span class="experience-number">01</span>
+                <span class="experience-name">Karma Communication</span>
+                <span class="experience-meta" data-i18n="internshipCagnes">Stage · Cagnes-sur-Mer</span>
+                <span class="experience-date">20/04 – 30/06</span>
+                <span class="details-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="experience-details">
+                <ul>
+                  <li data-i18n="karmaTask1">Maquettes dans Figma : pages et visuels dessinés avant le montage, avec une cohérence graphique entre les supports.</li>
+                  <li data-i18n="karmaTask2">WordPress : mises à jour des plugins, ajustements de pages, gestion du site multilingue avec WPML.</li>
+                  <li data-i18n="karmaTask3">SEO : réglage de Rank Math SEO (titres, descriptions, mots-clés).</li>
+                  <li data-i18n="karmaTask4">HTML, CSS et un peu de JavaScript pour corriger et peaufiner l'affichage.</li>
+                  <li data-i18n="karmaTask5">Emailing : montage de campagnes sur Brevo.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="experience-item reveal" open>
+              <summary>
+                <span class="experience-number">02</span>
+                <span class="experience-name">Catching Box <span data-i18n="andSmartTouch">(et Smart Touch)</span></span>
+                <span class="experience-meta" data-i18n="internshipNice">Stage · Nice</span>
+                <span class="experience-date">02/06 – 02/07</span>
+                <span class="details-icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="experience-details">
+                <ul>
+                  <li data-i18n="catchTask1">Événementiel : animation d'un événement privé, présence au Salon de l'entrepreneuriat.</li>
+                  <li data-i18n="catchTask2">Technique : installation et réglage de matériel pour les stands, notamment des écrans.</li>
+                  <li data-i18n="catchTask3">Photographie et visuels avec la suite Adobe, mise à jour du site sous WordPress.</li>
+                  <li data-i18n="catchTask4">Vente et accueil du public.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="education section-wrap" id="formation" aria-labelledby="formation-titre">
+        <div class="section-marker reveal"><span>04</span><span data-i18n="education">Formation</span></div>
+        <div class="section-main">
+          <div class="section-heading-row reveal">
+            <h2 class="section-heading" id="formation-titre"><span data-i18n="education">Formation</span></h2>
+          </div>
+          <div class="education-list">
+            <article class="education-item reveal">
+              <span class="education-tag" data-i18n="intensive">Intensif</span>
+              <div>
+                <h4>Code Camp Epitech</h4>
+                <p data-i18n="epitechDescription">2 semaines : bases de données avec SQL, PHP côté serveur, CSS.</p>
+              </div>
+            </article>
+            <article class="education-item reveal">
+              <span class="education-tag">2024 – 2027</span>
+              <div>
+                <h4><span data-i18n="bachelor">Bachelor Communication et Marketing Digital</span> <span>· ISEG, Nice</span></h4>
+                <p data-i18n="bachelorDescription">Marketing stratégique, marketing digital (webdesign, UX, réseaux sociaux), gestion de projets de bout en bout, suite Adobe. Start-up Day avec Epitech (jeu vidéo, pitch devant un jury) et workshop de création d'une marque de mode (Maison Vini).</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice section-wrap" aria-labelledby="veille-titre">
+        <div class="section-marker reveal"><span>05</span><span data-i18n="watch">Veille</span></div>
+        <div class="practice-content reveal">
+          <h2 class="section-heading" id="veille-titre"><span data-i18n="watchAndPractice">Veille et pratique personnelle</span></h2>
+          <p data-i18n="watchDescription">Cours en ligne et forums sur l'IA, dont le WAICF à Cannes.</p>
+          <div class="interest-line"><span data-i18n="interest1">Calisthénie et running</span><span data-i18n="interest2">Code et IA</span><span data-i18n="interest3">Design graphique</span><span data-i18n="interest4">Nouvelles technologies</span></div>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-titre">
+        <div class="section-marker reveal"><span>06</span><span data-i18n="contact">Contact</span></div>
+        <div class="contact-content reveal">
+          <h2 class="section-heading" id="contact-titre"><span data-i18n="letUsTalk">On en discute</span></h2>
+          <a class="button button-primary contact-cta" href="mailto:svitvitchi06@gmail.com"><span data-i18n="writeToMe">Écrivez-moi</span><span aria-hidden="true">↗</span></a>
+          <div class="contact-links">
+            <p><span data-i18n="email">E-mail</span><a class="contact-placeholder" href="mailto:svitvitchi06@gmail.com">svitvitchi06@gmail.com</a></p>
+            <p><span>LinkedIn</span><a class="contact-placeholder" href="https://www.linkedin.com/in/steven-vitvitchi-8544a5334/" target="_blank" rel="noopener noreferrer">steven-vitvitchi</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#accueil" aria-label="Retour en haut" data-i18n-aria="homeLink">SV<span>.</span></a>
+      <span>© 2026 Steven Vitvitchi.</span>
+      <a class="back-to-top" href="#accueil"><span data-i18n="backToTop">Retour en haut</span> <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
