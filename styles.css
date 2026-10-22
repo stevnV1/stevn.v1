@@ -454,15 +454,6 @@ summary:focus-visible {
   color: var(--bg);
 }
 
-.button-text {
-  border-bottom: 1px solid var(--line);
-}
-
-.button-text:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
 .section-heading-row {
   display: flex;
   align-items: flex-end;
