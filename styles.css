@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --bg: #14283F;
-  --text: #F2EDE6;
-  --muted: #8FAF9A;
-  --accent: #C47D52;
-  --surface: #102237;
-  --line: #6B8298;
-  --accent-text: #14283F;
-  --hero-wash: rgb(242 237 230 / 7%);
+  --bg: #070B12;
+  --text: #F5F7FA;
+  --muted: #A9B6C7;
+  --accent: #7CB4FF;
+  --surface: #0E1725;
+  --line: #1F2C3D;
+  --accent-text: #08131F;
+  --hero-wash: rgb(124 180 255 / 8%);
   --color-bg: var(--bg);
   --color-surface: var(--surface);
   --color-text: var(--text);
@@ -329,7 +329,7 @@ summary:focus-visible {
 }
 
 .hero-kicker span {
-  color: #F2B17F;
+  color: var(--accent);
 }
 
 .hero h1 {
@@ -342,7 +342,7 @@ summary:focus-visible {
 }
 
 .hero h1 span {
-  color: #F2B17F;
+  color: var(--accent);
 }
 
 .scroll-cue {
